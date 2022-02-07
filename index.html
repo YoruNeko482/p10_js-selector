@@ -13,16 +13,52 @@
         $(document).ready(function(){
                 $(".noble2").hide();
                 $(".modelo").hide();
+                $(".corbata").hide();
+                $(".gorra").hide();
+                $(".gafas").hide();
+                $(".monoculo").hide();
 
-            $(".neko").click(function(){
+            $(".f1").click(function(){
                 $(".noble2").show();
-                $(".modelo").show();
-            });
-            $(".modelo").click(function(){
+                 });
+            $(".noble2").click(function(){
                 $(".noble2").hide();
+                 });
+                 
+            $(".f2").click(function(){
+                $(".modelo").show();
+                 });
+            $(".modelo").click(function(){
                 $(".modelo").hide();
-            });
+                 });
 
+            $(".f3").click(function(){
+                $(".gafas").show();
+                 });
+            $(".gafas").click(function(){
+                $(".gafas").hide();
+                 });
+
+            $(".f4").click(function(){
+                $(".gorra").show();
+                 });
+            $(".gorra").click(function(){
+                $(".gorra").hide();
+                 });
+
+            $(".f5").click(function(){
+                $(".monoculo").show();
+                 });
+            $(".monoculo").click(function(){
+                $(".monoculo").hide();
+                 });
+
+            $(".f6").click(function(){
+                $(".corbata").show();
+                 });
+            $(".corbata").click(function(){
+                $(".corbata").hide();
+                 });
         });
     </script>
     <style>
@@ -57,6 +93,34 @@
             width: 15%;
             height: auto;
         }
+        .corbata{
+            position: absolute;
+            left: 31%;
+            top: 50%;
+            width: 20%;
+            height: auto;
+        }
+        .gafas{
+            position: absolute;
+            left: 33.5%;
+            top: 30%;
+            width: 15%;
+            height: auto;
+        }
+        .gorra{
+            position: absolute;
+            left: 32.5%;
+            top: 7%;
+            width: 17%;
+            height: auto;
+        }
+        .monoculo{
+            position: absolute;
+            left: 35.2%;
+            top: 31.5%;
+            width: 12%;
+            height: auto;
+        }
         h1{
             position: absolute;
             top:15%;
@@ -64,6 +128,22 @@
             font-size: 10em;
             font-family: 'Quintessential', cursive;
         }
+        footer img{
+            width: 100%;
+            height: auto;
+        }
+        .probador{
+            display: flex;
+            justify-content: center;
+            justify-content: space-between;
+            margin-top: 5cm;
+        }
+        .f1, .f2, .f3, .f4, .f5, .f6{
+            width: 10em;
+            height: auto;
+        }
+
+        
     </style>
 </head>
 <body>
@@ -72,6 +152,10 @@
         <img class="noble2" src="img/sombrero.png" alt="">
         </div>
         <img class="modelo" src="img/pajarita.png" alt="">
+        <img  class="corbata" src="img/corbata.png" alt="">
+        <img class="gafas" src="img/gafas.png" alt="">
+        <img class="gorra" src="img/gorra.png" alt="">
+        <img class="monoculo" src="img/monoculo.png" alt="">
     </header>
     <main>
         <div id="c2">
@@ -81,6 +165,21 @@
             <h1>Gato <br> Noble</h1>
         </div>
     </main>
-    
+    <footer>
+        <div class="probador">
+        <div class="f1">
+        <img src="img/sombrero.png" alt=""></div>
+        <div class="f2">
+        <img src="img/pajarita.png" alt=""></div>
+        <div class="f3">
+        <img src="img/gafas.png" alt=""></div>
+        <div class="f4">
+        <img src="img/gorra.png" alt=""></div>
+        <div class="f5">
+        <img src="img/monoculo.png" alt=""></div>
+        <div class="f6">
+        <img src="img/corbata.png" alt=""></div>
+        </div>
+    </footer>
 </body>
 </html>
