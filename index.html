@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gato Noble</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+                $(".noble2").hide();
+                $(".modelo").hide();
+
+            $(".neko").click(function(){
+                $(".noble2").show();
+                $(".modelo").show();
+            });
+            $(".modelo").click(function(){
+                $(".noble2").hide();
+                $(".modelo").hide();
+            });
+
+        });
+    </script>
+    <style>
+       /* #c1{
+            display: flex;
+            justify-content: start;
+            width: 400px;
+            height: auto;
+        }*/
+        #c2{
+            display: flex;
+            justify-content: start;
+            width: 800px;
+            height: auto;
+            margin-top: 4cm;
+        }
+        main img{
+            width: 100%;
+            height: auto;
+        }
+        header img{
+            position: absolute;
+            left: 28.5%;
+            top: 0%;
+            width: 25%;
+            height: auto;
+        }
+        .modelo{
+            position: absolute;
+            left: 33%;
+            top: 45%;
+            width: 15%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="c1">
+        <img class="noble2" src="img/sombrero.png" alt="">
+        </div>
+        <img class="modelo" src="img/pajarita.png" alt="">
+    </header>
+    <main>
+        <div id="c2">
+        <img class="neko" src="img/cat.png" alt="">
+        </div>
+    </main>
+    
+</body>
+</html>
